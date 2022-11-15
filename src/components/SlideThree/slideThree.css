@@ -1,0 +1,125 @@
+.slide-three {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f7f9fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-container {
+  width: 80%;
+  margin: 15px 0px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.city-name {
+  color: #d42d26;
+}
+
+.question-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.question {
+  font-size: 25px;
+}
+
+.page-number {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.inactive-number {
+  color: #aaaaab;
+  margin: 0px 5px;
+}
+
+.active-number {
+  color: #0f2a4f;
+  margin: 0px 5px;
+}
+
+.input-number {
+  width: 80%;
+  height: 7vh;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0px 15px;
+}
+
+.input-number::placeholder {
+  font-size: 18px;
+  color: #aaaaab;
+}
+
+.btn-container {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0f2a4f;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: 0.5s all ease-in-out;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn::before,
+.btn::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.btn:after {
+  width: 300%;
+  height: 300%;
+  left: -300%;
+  transform: rotate(45deg);
+  background-color: #d42d26;
+  transition: all 300ms ease;
+}
+
+.btn:hover p {
+  color: #fff;
+  z-index: 10;
+}
+
+.btn:hover::after {
+  left: -100%;
+}
+
+.btn:hover {
+  border-color: #d42d26;
+}
+
+.btn p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0px 5px;
+}

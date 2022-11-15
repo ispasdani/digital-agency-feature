@@ -1,0 +1,153 @@
+.days-schedule {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f7f9fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-container {
+  width: 80%;
+  margin: 15px 0px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.cards-container {
+  width: 80%;
+  height: 55vh;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 55vh;
+  margin: 0px 25px;
+}
+
+.card-image-one {
+  width: 300px;
+  height: 42vh;
+  background-image: url("../../assets/day1.jpg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-image-one::before,
+.card-image-one::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.card-image-one {
+  overflow: hidden;
+}
+
+.card-image-one:after {
+  left: -100%;
+  clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s all ease;
+}
+
+.card-image-one:hover::after {
+  left: 100%;
+}
+
+.card-image-two {
+  width: 300px;
+  height: 42vh;
+  background-image: url("../../assets/day2.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-image-two::before,
+.card-image-two::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.card-image-two {
+  overflow: hidden;
+}
+
+.card-image-two:after {
+  left: -100%;
+  clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s all ease;
+}
+
+.card-image-two:hover::after {
+  left: 100%;
+}
+
+.card-day {
+  font-size: 27px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+
+.card-content::before,
+.card-content::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
+  overflow: hidden;
+}
+
+.card-content:after {
+  left: -100%;
+  clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
+  background-color: rgba(208, 229, 252, 0.6);
+  transition: 0.4s all ease;
+}
+
+.card-content:hover::after {
+  left: 100%;
+}
+
+.arrow-to-more {
+  font-size: 35px;
+  transition: 0.5s all ease-in-out;
+}
+
+.card-content:hover > .arrow-to-more {
+  transform: rotate(90deg);
+}

@@ -1,0 +1,219 @@
+.day-one {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f7f9fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-day {
+  width: 80%;
+  height: 8vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.day-one-title {
+  text-decoration: none;
+  color: #d42d26;
+  font-size: 26px;
+  font-weight: 600;
+  transition: 0.5s all ease-in-out;
+}
+
+.day-one-title span {
+  color: #d42d26;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.day-one-title:hover {
+  transform: scale(1.1);
+}
+
+.card-attraction {
+  width: 80%;
+  height: 35vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.card-attraction-img-day-one {
+  width: 30%;
+  height: 30vh;
+  background-image: url("../../assets/sjette.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-attraction-img-day-one::before,
+.card-attraction-img-day-one::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.card-attraction-img-day-one {
+  overflow: hidden;
+}
+
+.card-attraction-img-day-one:after {
+  left: -100%;
+  clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s all ease;
+}
+
+.card-attraction-img-day-one:hover::after {
+  left: 100%;
+}
+
+.card-attraction-img-day-two {
+  width: 30%;
+  height: 30vh;
+  background-image: url("../../assets/blender.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-attraction-img-day-two::before,
+.card-attraction-img-day-two::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.card-attraction-img-day-two {
+  overflow: hidden;
+}
+
+.card-attraction-img-day-two:after {
+  left: -100%;
+  clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s all ease;
+}
+
+.card-attraction-img-day-two:hover::after {
+  left: 100%;
+}
+
+.card-attraction-img-day-three {
+  width: 30%;
+  height: 30vh;
+  background-image: url("../../assets/lava.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-attraction-img-day-three::before,
+.card-attraction-img-day-three::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.card-attraction-img-day-three {
+  overflow: hidden;
+}
+
+.card-attraction-img-day-three:after {
+  left: -100%;
+  clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s all ease;
+}
+
+.card-attraction-img-day-three:hover::after {
+  left: 100%;
+}
+
+.card-attraction-img-day-forth {
+  width: 30%;
+  height: 30vh;
+  background-image: url("../../assets/store.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-attraction-img-day-forth::before,
+.card-attraction-img-day-forth::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.card-attraction-img-day-forth {
+  overflow: hidden;
+}
+
+.card-attraction-img-day-forth:after {
+  left: -100%;
+  clip-path: polygon(10% 0, 70% 0, 90% 100%, 30% 100%);
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s all ease;
+}
+
+.card-attraction-img-day-forth:hover::after {
+  left: 100%;
+}
+
+.card-attraction-info {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.card-attraction-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.card-attraction-text {
+  margin: 10px;
+  font-size: 16px;
+}
+
+.card-price {
+  margin: 5px 10px;
+}
+
+.btn-to-map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #0f2a4f;
+  border-radius: 30px;
+  cursor: pointer;
+}
